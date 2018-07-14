@@ -132,7 +132,7 @@ aside a {
     color: #fff; }
 
 footer {
-  background-color: black;
+  background-color: #cc0000;
   color: #eee;
   padding: 1.7em; }
 
@@ -210,13 +210,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav" "head head head" "s1 s2 s3" "photo s4 s4" "photo s5 s5" "aside s6 s6" "aside s7 s8" "aside s9 s10" "aside feet feet"; } }
-body {
-  font-family: sans-serif; }
-
 img {
   max-width: 100%; }
-
-footer {
-  background-color: red; }
 
 /*# sourceMappingURL=main.css.map */
