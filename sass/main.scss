@@ -1,0 +1,29 @@
+//importing Variables
+@import 'vars';
+
+//Mixins
+@import 'mixins';
+
+//reset styles
+@import 'reset';
+
+//The navigation
+@import 'navigation';
+
+//The navigation
+@import 'grid';
+
+body {
+  font-family: sans-serif;
+  //test
+  //test
+}
+
+img {
+    max-width: 100%;
+
+}
+
+footer {
+  background-color: $mainColor;
+}

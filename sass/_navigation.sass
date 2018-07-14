@@ -1,0 +1,67 @@
+/*Navigation*/
+nav
+  background-color: $darkerColor
+  color: #eee
+  width: 100%
+  text-align: center
+
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+  li
+    list-style-type: none
+
+  a
+    display: block
+    color: #eee
+    font-weight: bold
+    text-decoration: none
+    padding: 1.8em
+    /*Hide menu*/
+    border-bottom: 0 solid #eee
+    font-size: 0
+    height: 0
+    line-height: 0
+    transform: scaleY(0)
+    transition: all 0.4s ease-out
+    &:hover
+      color: $mainColor
+      background: #eee
+
+  //Toggle Menu
+  .toggleMenu
+    background: $mainColor
+    cursor: pointer
+    display: block
+    padding: 1.3em
+    text-align: right
+    margin-top: -8px
+
+  //Toggle button
+  #Toggle
+    display: none
+
+  #Toggle:checked ~ ul a
+    /*Show Menu*/
+    font-size: 1em
+    height: 1em
+    line-height: 1em
+    transform: scaleY(1)
+    border-bottom: 1px solid #eee
+
+  #Toggle:checked ~ .toggleMenu .fa-times-circle
+    display: block
+
+
+  #Toggle:checked ~ .toggleMenu .fa-bars
+    display: none
+
+
+  /* Hiding Menu same with .fa-times-circle*/
+  .fa-times-circle
+    display: none
+
+// Tablet
+@media screen and (min-width: 40em)
+  @import "navigationTab"

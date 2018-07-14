@@ -1,0 +1,30 @@
+nav {
+  position: static;
+  >ul {
+    display: grid;
+    @include grid-t-c(1fr 1fr 1fr 1fr);
+  }
+
+  a {
+    font-weight: bold;
+    font-size: 1em;
+    height: 1em;
+    line-height: 1em;
+    transform: scaleY(1);
+  }
+
+  a:hover {
+    color: $mainColor;
+      background: #eee;
+  }
+
+  .toggleMenu {
+      display: none;
+  }
+
+  ul>li:not(:first-child) a {
+    border-left: 10px solid #eeeeee;
+  }
+
+
+}

@@ -1,0 +1,118 @@
+@font-face
+  font-family: "Splatfont 2"
+  src: url('../Splatfont.ttf')
+
+
+html, body, h3
+  padding: 0
+  margin: 0
+  font-family: "Splatfont 2"
+
+header
+  padding: 1.7em
+  background-color: $lighterColor
+
+aside
+  background-color: $lighterColor
+
+h1, .tag
+  color: $mainColor
+
+section
+  display: grid
+  grid-template-columns: auto 1fr
+
+.Number
+  background-color: $mainColor
+  color: #fff
+  font-size: 2.5em
+  width: 1.2em
+  text-align: right
+  padding: .2em
+
+article
+  padding: 1em
+
+section img
+  max-width: 100%
+
+aside
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+  h3
+    background-color: $mainColor
+    padding: 1.6em
+    color: #fff
+  span
+    color: black
+  a
+    text-decoration: none
+    padding: 1.6em
+    display: block
+    &:hover
+      background-color: $mainColor
+      color: #fff
+
+footer
+  background-color: black
+  color: #eee
+  padding: 1.7em
+
+@media screen and (min-width: 760px)
+  .photo
+    display: block
+    background-image: url("../YouTube.png")
+    background-size: cover
+    background-position: center center
+  body
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "nav nav" "head head" "s1 s2" "s3 s4" "s3 s5" "photo s6" "s7 aside" "s8 aside" "s9 aside" "s10 aside" "feet feet"
+  nav
+    grid-area: nav
+  header
+    grid-area: head
+  .mask
+    grid-area: s1
+  .shape
+    grid-area: s2
+  .pingpong
+    grid-area: s3
+  .darci
+    grid-area: s4
+  .ed
+    grid-area: s5
+  .gaga
+    grid-area: s6
+  .world
+    grid-area: s7
+  .trump
+    grid-area: s8
+  .heartbeat
+    grid-area: s9
+  .bbc
+    grid-area: s10
+  .photo
+    grid-area: photo
+  aside
+    grid-area: aside
+  footer
+    grid-area: feet
+  h1
+    font-size: 2.4em
+  .mask_art
+    display: grid
+    grid-template-columns: 1fr 1fr
+    h3
+      grid-column: span 2
+  footer
+    display: grid
+    grid-template-columns: 1fr auto
+
+@media screen and (min-width: 1000px)
+  body
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "nav nav nav" "head head head" "s1 s2 s3" "photo s4 s4" "photo s5 s5" "aside s6 s6" "aside s7 s8" "aside s9 s10" "aside feet feet"
